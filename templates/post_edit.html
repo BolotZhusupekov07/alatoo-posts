@@ -1,11 +1,17 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block content %}
-<h1>Edit Blog</h1>
-<form action = "" method = "post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type = "submit" value = "Update" />
-
+<div class='container pt-3' style="width: 50%;">
+    <h2 >Update post</h2>
+    <div class="pt-4">
+        <form method = "post">
+    {% csrf_token %}
+    {{ form|crispy}}
+    <button type = "submit" class="btn btn-success">Save</button>
 </form>
+    </div>
+
+</div>
 
 {% endblock content %}

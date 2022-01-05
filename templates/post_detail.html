@@ -1,11 +1,35 @@
-{% extends 'base.html'%}
 
-{%block content%}
- <div class="post-entry">
-     <h2>{{ post.title }}</h2>
-     <p>{{ post.body }}</p>
- </div>
+{% extends 'base.html' %} {% block content %}
 
- <p><a href = "{%  url 'post_edit' post.pk%}"> + Edit Blog Post</a></p>
-<p><a href = "{% url 'post_delete' post.pk %}">  + Delete Blog Post</a></p>
- {% endblock content %}
+<style>
+    .card{
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+   
+</style>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <h2>{% block title %} {{ object.title }} {% endblock title %}</h2>
+        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+        <p class="card-text ">{{ object.body | safe }}</p>
+      </div>
+    </div>
+    {% if user.username == author %}
+   
+    <div class="col-md-4 float-right ">
+        <div class="card my-4">
+            <div class="card-body">
+                <p class="card-text"><a href = "{%  url 'post_edit' post.pk%}"> + Edit Blog Post</a></p>
+                <p class="card-text"><a href = "{% url 'post_delete' post.pk %}">  + Delete Blog Post</a></p>
+            </div>
+        </div>
+        </div>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock content %}

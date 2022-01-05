@@ -12,10 +12,19 @@ class BlogDetailView(DetailView):
     model = Post
     template_name = "post_detail.html"
 
+    def get_context_data(self, **kwargs):
+        data = super().get_context_data(**kwargs)
+        data['author'] = self.object.author.username
+        return data
+
 class BlogCreateView(CreateView):
     model = Post
     template_name = "post_new.html"
-    fields = '__all__'
+    fields = ('title', 'body')
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
 
 class BlogUpdateView(UpdateView):
     model = Post
