@@ -31,4 +31,8 @@ It is a Blog site with registration where you can post your news, ads etc.
 
 3.[Erlan Kerimbekov](https://github.com/K-Erlan)
 
+## Link to Web-site: https://alatoo-blogs.herokuapp.com/
+
+## Link to Presentation/Guide Video: https://youtu.be/DWOXIG1gDqM
+
 ## Feedbacks
