@@ -36,3 +36,5 @@ It is a Blog site with registration where you can post your news, ads etc.
 ## Link to Presentation/Guide Video: https://youtu.be/DWOXIG1gDqM
 
 ## Feedbacks
+
+ - https://drive.google.com/drive/folders/1JdrceTwp9Eb9rv3h78mznyQvT9ZBtzs8?usp=sharing
