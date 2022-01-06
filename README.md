@@ -23,6 +23,15 @@ It is a Blog site with registration where you can post your news, ads etc.
 #### Deleting
 
 ![](https://github.com/BolotZhusupekov07/alatoo-posts/blob/master/img/Screenshot_4.png)
+
+### Link to Web-site: https://alatoo-blogs.herokuapp.com/
+
+### Link to Presentation/Guide Video: https://youtu.be/DWOXIG1gDqM
+
+### Feedbacks
+
+ - https://drive.google.com/drive/folders/1JdrceTwp9Eb9rv3h78mznyQvT9ZBtzs8?usp=sharing
+
 ## Contributors
 
 1.[Bolot Zhusupekov](https://github.com/BolotZhusupekov07)
@@ -30,11 +39,3 @@ It is a Blog site with registration where you can post your news, ads etc.
 2.[Abdulaziz Talantbek uulu](https://github.com/cwarkk)
 
 3.[Erlan Kerimbekov](https://github.com/K-Erlan)
-
-## Link to Web-site: https://alatoo-blogs.herokuapp.com/
-
-## Link to Presentation/Guide Video: https://youtu.be/DWOXIG1gDqM
-
-## Feedbacks
-
- - https://drive.google.com/drive/folders/1JdrceTwp9Eb9rv3h78mznyQvT9ZBtzs8?usp=sharing
